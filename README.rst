@@ -1,15 +1,20 @@
-# Flask restful service in docker
+Flask restful service in docker
+===============================
 
-## Description
+# Description
 
 Python Flask restful API running with `Meinheld <https://github.com/mopemope/meinheld>`_ controlled by `Gunicorn <http://gunicorn.org>`_.
-When receives list of urls of images converts them to black and white in local folder
+When receives list of urls of images it converts them to black and white and serve in local folder
 
-Test docker it on Linux
------------------------
+Test docker image on Linux
+--------------------------
+
 su
+
 systemctl start docker
-docker-compose -f /home/korzh/Python/PycharmProjects/flask_rest/docker-compose.yml up -d
+
+docker-compose -f docker-compose.yml up -d
+
 
 Try out JSON and HTML requests
 ------------------------------
@@ -18,4 +23,5 @@ Send requests directly to this address or REST API using documentation provided 
 _http://127.0.0.1:5000/doc_
 
 ---
-This is a test. Original task [russian] see in system-tech_task/Task[ru].rst
+
+This is a test. Original task [russian] see in system-tech_task[ru].rst

@@ -1,1 +1,30 @@
+# general things to ignore
+.*/
+build/
+
 .gitignore
+*.egg-info/
+*.egg
+*.py[cod]
+__pycache__/
+*.so
+*~
+
+# due to using tox and pytest
+.tox
+.cache
+
+# secrets
+#instance/
+
+# db
+data/
+!data/pg_backup
+
+# developing test/code
+*.log
+*.csv
+*.pytest.ini
+Dockerfile
+docker-compose.yml
+.dockerignore

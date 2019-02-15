@@ -1,3 +1,6 @@
 CHANGES
 =======
 
+* remove garbage
+* Initial commit
+* flask\_rest on meinheld controlled by gunicorn converts images in alpine docker
